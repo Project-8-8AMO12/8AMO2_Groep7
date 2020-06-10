@@ -97,7 +97,7 @@
 {{--        </div>--}}
 {{--    </body>--}}
 {{--</html>--}}
-@extends('components.bootstrap')
+@extends('layouts.bootstrap')
 
 @section('title', 'Home Page')
 
