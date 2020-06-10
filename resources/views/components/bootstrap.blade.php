@@ -42,9 +42,7 @@
         </nav>
     @show
 
-    <div class="container-fluid">
-        @yield('content')
-    </div>
+    @yield('content')
 
 
     @section('footer')
