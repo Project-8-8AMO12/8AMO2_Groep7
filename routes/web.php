@@ -14,7 +14,7 @@
 // Missing login/registration page and route
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/activiteiten', function () {
