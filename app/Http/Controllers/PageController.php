@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
     public function index() {
-        return view('welcome');
+        $users = DB::table('pages')->select('text')->get();
+
+        return view('index')->with('loremipsum', $users);
     }
 
     public function contact() {

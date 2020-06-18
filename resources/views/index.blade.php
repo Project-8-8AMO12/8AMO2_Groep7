@@ -11,6 +11,7 @@
                 </div>
                 <div class="col">
                     2 of 2
+                    {{ $loremipsum }}
                 </div>
             </div>
         </div>
