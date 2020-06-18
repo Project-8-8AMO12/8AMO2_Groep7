@@ -15,8 +15,13 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('text');
             $table->timestamps();
         });
+
+        Artisan::call('db:seed', [
+            '--class' => LoremIpsum::class
+        ]);
     }
 
     /**
